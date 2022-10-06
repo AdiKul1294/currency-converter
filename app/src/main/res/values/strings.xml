@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+
+
+    <string-array name="currencies">
+        <item>AED - UAE Dirham</item>
+        <item>ANG - Netherlands Antillian Guilder</item>
+        <item>AUD - Australian Dollar</item>
+        <item>BDT - Bangladeshi Taka</item>
+        <item>CAD - Canadian Dollar</item>
+        <item>CHF - Swiss Franc</item>
+        <item>CNY - Chinese Renminbi</item>
+        <item>EUR - Euro</item>
+        <item>HKD - Hong Kong Dollar</item>
+        <item>IDR - Indonesian Rupiah</item>
+        <item>INR - Indian Rupee</item>
+        <item>JPY - Japanese Yen</item>
+        <item>LKR - Sri Lankan Rupee</item>
+        <item>MXN - Mexican Peso</item>
+        <item>NGN - Nigerian Naira</item>
+        <item>RUB - Russian Ruble</item>
+        <item>THB - Thai Baht</item>
+        <item>USD - United States Dollar</item>
+        <item>VND - Vietnamese Dong</item>
+        <item>ZWL - Zimbabwean Dollar</item>
+
+
+
+    </string-array>
+
+</resources>
