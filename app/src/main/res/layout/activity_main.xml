@@ -21,9 +21,10 @@
             android:id="@+id/input_amt_txt_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="#00FFFFFF"
             android:hint="Input Amount"
             android:inputType="numberDecimal"
+            android:textColor="#000000"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:inputType="none"
+            android:inputType="textAutoComplete"
             android:text="Input Currency"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -63,7 +64,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swap_btn_main"
-        app:layout_constraintVertical_bias="0.15">
+        app:layout_constraintVertical_bias="0.05">
 
         <AutoCompleteTextView
             android:id="@+id/output_curr_actv_main"
@@ -71,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:inputType="none"
+            android:inputType="textAutoComplete"
             android:text="Output Currency"
             android:textSize="20sp" />
 
@@ -81,7 +82,7 @@
         android:id="@+id/output_amt_txt_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
         android:text="TextView"
         android:textColor="#000000"
         android:textSize="30sp"
@@ -93,15 +94,38 @@
 
     <ImageView
         android:id="@+id/swap_btn_main"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:rotation="90"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_curr_til_main"
-        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintVertical_bias="0.05"
         app:srcCompat="@drawable/img" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/convert_btn_cv_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#357838"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_amt_txt_main">
+
+        <TextView
+            android:id="@+id/convert_txt_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="CONVERT"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
